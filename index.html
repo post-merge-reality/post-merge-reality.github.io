@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Do These Violent Delights Have Violent Ends?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="headerActions">
+        <nav class="topnav" aria-label="Primary">
+          <button class="navTab active" type="button" data-tab="findings">Findings</button>
+          <button class="navTab" type="button" data-tab="visualization">Visualization</button>
+          <a class="navLink" href="#" aria-disabled="true">Paper</a>
+          <a class="navLink iconLink" href="https://github.com/post-merge-reality/post-merge-reality" aria-disabled="true" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.45 11.45 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+              />
+            </svg>
+            <span class="srOnly">GitHub</span>
+          </a>
+          <button class="themeToggle iconLink" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+            <svg class="themeIcon themeIconSun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" />
+            </svg>
+            <svg class="themeIcon themeIconMoon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.2 15.4A8.2 8.2 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z" />
+            </svg>
+            <span class="srOnly" id="themeToggleText">Switch to dark mode</span>
+          </button>
+        </nav>
+        <div class="status" id="loadStatus" aria-live="polite"></div>
+      </div>
+    </header>
+
+    <main>
+      <section id="findingsPage" class="page findingsPage">
+        <section class="paperHero landingReveal">
+          <h1 style="margin-bottom:0.1em;">Do These Violent Delights Have Violent Ends?</h1>
+          <h2>Measuring the Post-Merge Fate of <span class="agenticText">Agentic</span> Code</h2>
+          <div class="heroLinks" aria-label="Paper links">
+            <a class="heroLinkCard" href="#" aria-disabled="true">
+              <span class="heroLinkIcon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 2.75h8.2L18 6.55v14.7H6z" />
+                  <path d="M14 2.75v4h4M8.6 11h6.8M8.6 14.5h6.8M8.6 18h4.2" />
+                </svg>
+              </span>
+              <span>
+                <strong>Paper</strong>
+                <!-- <small>Read the manuscript</small> -->
+              </span>
+            </a>
+            <a class="heroLinkCard" href="https://github.com/post-merge-reality/post-merge-reality" aria-disabled="true">
+              <span class="heroLinkIcon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 .5a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.45 11.45 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                  />
+                </svg>
+              </span>
+              <span>
+                <strong>GitHub</strong>
+                <!-- <small>View replication package</small> -->
+              </span>
+            </a>
+          </div>
+          <div class="findingsPlaceholder">
+            <!-- <h2>Almost everything we know about agentic code quality comes from measurements taken at or before merge...</h2> -->
+            <!-- <h2>What happens to agentic code after merge, and how it compares to human code over time, remains largely unstudied.</h2> -->
+            <h3>First longitudinal empirical study of the post-merge lifecycle of <span class="agenticText">agentic</span> and <span class="humanText">human</span> code in real-world open source projects.</h3>
+          </div>
+          <div class="scaleStats" aria-label="Dataset scale">
+            <div class="scaleStat">
+              <strong>182</strong>
+              <span>public GitHub repositories</span>
+            </div>
+            <div class="scaleStat">
+              <strong>30K+</strong>
+              <span><span class="agenticText">agentic</span> commits</span>
+            </div>
+            <div class="scaleStat">
+              <strong>121M+</strong>
+              <span>lifecycle lines tracked</span>
+            </div>
+            <div class="scaleStat">
+              <strong>12</strong>
+              <span>maintenance operational intents</span>
+            </div>
+            <div class="scaleStat">
+              <strong>143K+</strong>
+              <span>security & dependency findings</span>
+            </div>
+            <div class="scaleStat">
+              <strong>1 year</strong>
+              <span>May 2025 to May 2026</span>
+            </div>
+          </div>
+          <div class="findingsPlaceholder">
+            <!-- <h2>Almost everything we know about agentic code quality comes from measurements taken at or before merge...</h2> -->
+            <!-- <h2>What happens to agentic code after merge, and how it compares to human code over time, remains largely unstudied.</h2> -->
+            <h2>Finding Highlights:</h2>
+            <div class="findingCards" aria-label="Finding highlights">
+              <article class="findingCard">
+                <strong class="findingMetricLarge">46%</strong>
+                <p>higher corrective maintenance rates than <span class="humanText">human</span> contributions</p>
+              </article>
+              <article class="findingCard">
+                <strong class="findingMetricLarge">1.51x</strong>
+                <p>times more high-severity static security findings than <span class="humanText">human</span> contributions</p>
+              </article>
+              <article class="findingCard">
+                <strong><span class="agenticText">Agentic</span> code share</strong>
+                <p>increases the corrective maintenance burden within projects</p>
+              </article>
+              <article class="findingCard">
+                <strong>No review rate</strong>
+                <p>increases the <span class="agenticText">agentic</span> maintenance burden of a project</p>
+              </article>
+            </div>
+            <br>
+            <h4> Interested to learn more? Check out the interactive visualization to play with the data yourself!</h4>
+          </div>
+          <div class="findingsPlaceholder">
+            <h2>Citation:</h2>
+            <div class="citationBox">
+              <pre id="citationText">@article{postmerge26,
+  title   = {Do These Violent Delights Have Violent Ends? 
+             Measuring the Post-Merge Fate of Agentic Code},
+  author  = {Xia, Chunqiu Steven and Miller, Courtney},
+  year    = {2026},
+  journal = {arXiv preprint arXiv:temp},
+  url     = {https://arxiv.org/pdf/temp}
+}</pre>
+              <button class="citationCopyButton" id="citationCopyButton" type="button">Copy</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="visualizationPage" class="page visualizationPage hidden">
+        <div class="layout">
+          <aside class="filters">
+            <label>
+              Search repo
+              <input id="searchInput" type="search" placeholder="owner/repo" />
+            </label>
+            <label>
+              Language
+              <select id="languageSelect"></select>
+            </label>
+            <label>
+              Repo focus
+              <select id="repoSelect"></select>
+            </label>
+            <label>
+              <span class="filterLabelText">Min. <span class="agenticText">agentic</span> commits</span>
+              <input id="minAgenticInput" type="number" min="0" value="0" />
+            </label>
+            <button id="resetButton" type="button">Reset filters</button>
+          </aside>
+
+          <section class="content">
+            <section class="cards" id="overviewCards"></section>
+
+            <section class="panel">
+              <div class="panelHeader">
+                <div>
+                  <h2>Repo-Week Timeline</h2>
+                  <p>Weekly tracked-line survival rates for <span class="agenticText">agentic</span> and <span class="humanText">human</span> origin lines.</p>
+                </div>
+              </div>
+              <svg id="timelineChart" class="chart" role="img"></svg>
+            </section>
+
+            <section class="panel">
+              <h2>Commit Contribution Maintenance Class Mix</h2>
+              <svg id="maintenanceChart" class="chart compact" role="img"></svg>
+            </section>
+
+            <section class="panel">
+              <h2>Origin-to-Terminal Actor Flow</h2>
+              <svg id="originTerminalSankey" class="chart sankeyChart" role="img"></svg>
+            </section>
+
+            <section class="panel">
+              <h2>Line-Level Termination Maintenance Class Proportion</h2>
+              <svg id="terminalMaintenanceChart" class="chart compact" role="img"></svg>
+            </section>
+
+            <section class="grid">
+              <section class="panel">
+                <h2>Semgrep Findings</h2>
+                <svg id="staticChart" class="chart compact" role="img"></svg>
+              </section>
+              <section class="panel">
+                <h2>OSV-Scanner Findings</h2>
+                <svg id="supplyChart" class="chart compact" role="img"></svg>
+              </section>
+            </section>
+
+            <section class="panel tablePanel">
+              <div class="panelHeader">
+                <div>
+                  <h2>Repositories</h2>
+                  <p id="tableCaption">Filtered repository summaries.</p>
+                </div>
+              </div>
+              <div class="tableWrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Repo</th>
+                      <th>Language</th>
+                      <th>Stars</th>
+                      <th><span class="agenticText">Agentic</span> Commits</th>
+                      <th><span class="agenticText">Agentic</span> Share</th>
+                      <th>Latest <span class="agenticText">Agentic</span> Lines</th>
+                      <th>Survival</th>
+                    </tr>
+                  </thead>
+                  <tbody id="repoTableBody"></tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
